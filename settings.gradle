@@ -1,0 +1,2 @@
+rootProject.name = "MapIR"
+include ':app'
