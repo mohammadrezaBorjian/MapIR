@@ -39,8 +39,7 @@ class MainActivity : AppCompatActivity() {
                 22,
                 256,
                 ".png",
-                arrayOf("https://map.ir/shiveh")
-            )
+                copyright = "© your copyRight")
         )
         mapView.setMultiTouchControls(true)
         mapView.maxZoomLevel = 19.toDouble()
