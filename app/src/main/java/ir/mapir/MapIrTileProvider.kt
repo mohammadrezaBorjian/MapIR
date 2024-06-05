@@ -12,7 +12,8 @@ class MapIrTileProvider(
     aZoomMaxLevel: Int,
     aTileSizePixels: Int,
     aImageFilenameEnding: String?,
-    aBaseUrl: Array<out String>?
+    aBaseUrl: Array<out String>? = null,
+    var copyright:String
 ) : OnlineTileSourceBase(
     aName,
     aZoomMinLevel,
@@ -76,6 +77,6 @@ class MapIrTileProvider(
     }
 
     override fun getCopyrightNotice(): String? {
-        return "© your copyRight"
+        return copyright
     }
 }
